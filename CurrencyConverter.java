@@ -22,18 +22,21 @@ public class CurrencyConverter {
                 double pounds = scan.nextDouble();
                 double euro   = pounds * euroOverPoundRatio;
                 System.out.println("£" + pounds + " will give you " + euro + "€");
+                System.out.println("Proceed to next stage");
                 break;
             case 2:
                 System.out.print("How many euro would you like to convert? ");
                 euro   = scan.nextDouble();
                 pounds = euro * poundOverEuroRatio;
                 System.out.println(euro + "€ will give you £" + pounds);
+                System.out.println("Proceed to next stage");
                 break;
             case 0:
                 finished = true;
                 break;
             default:
                 System.out.println("Sorry, that is not a valid option");
+                System.out.println("Please select a valid option");
             }
         }
         System.out.println("Exiting the program");
